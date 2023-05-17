@@ -14,6 +14,7 @@ interface CartContextProps {
   addToCart: (product: Product) => void;
   removeFromCart: (productId: number) => void;
   updateQuantity: (productId: number, newQuantity: number) => void;
+  totalQuantity: number;
 }
 
 export const CartContext = createContext<CartContextProps | undefined>(
@@ -38,6 +39,10 @@ export const CartProvider: React.FC<Props> = ({ children }) => {
     });
   };
 
+  const totalQuantity = cartItems
+    .map((item) => item.quantity)
+    .reduce((prev, curr) => prev + curr, 0);
+
   const removeFromCart = (productId: number) => {
     setCartItems((prevCartItems) =>
       prevCartItems.filter((item) => item.id !== productId)
@@ -57,6 +62,7 @@ export const CartProvider: React.FC<Props> = ({ children }) => {
     addToCart,
     removeFromCart,
     updateQuantity,
+    totalQuantity,
   };
 
   return (
