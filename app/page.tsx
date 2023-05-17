@@ -2,11 +2,11 @@
 
 import ProductList from '@components/ProductList';
 
-const Home = () => {
+const HomePage = () => {
   return (
-    <section className="px-8 py-4">
+    <section>
       <ProductList></ProductList>
     </section>
   );
 };
-export default Home;
+export default HomePage;

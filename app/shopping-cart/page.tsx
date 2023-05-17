@@ -1,9 +1,14 @@
+import ShoppingCart from '@components/ShoppingCart';
 import React from 'react';
 
 type Props = {};
 
-const ShoppingCart: React.FC<Props> = () => {
-  return <div>ShoppingCart</div>;
+const ShoppingCartPage: React.FC<Props> = () => {
+  return (
+    <div>
+      <ShoppingCart />
+    </div>
+  );
 };
 
-export default ShoppingCart;
+export default ShoppingCartPage;

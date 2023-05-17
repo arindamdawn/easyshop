@@ -1,6 +1,6 @@
-# EasyShop
+# HeroGo
 
-EasyShop is a simple e-commerce product listing page with a shopping cart. It allows users to browse and add products to their cart for easy online shopping. The project is built using modern web technologies such as Next.js, React, and Tailwind CSS.
+HeroGo is a simple e-commerce product listing page with a shopping cart. It allows users to browse and add products to their cart for easy online shopping. The project is built using modern web technologies such as Next.js, React, and Tailwind CSS.
 
 ## Features
 
