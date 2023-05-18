@@ -9,11 +9,6 @@ type Props = {
   children: React.ReactNode;
 };
 
-export const metadata = {
-  title: 'Hero Go',
-  description: 'The coolest e-commerce store!',
-};
-
 const RootLayout: React.FC<Props> = ({ children }) => {
   return (
     <html lang="en">
